@@ -395,7 +395,19 @@ img {
   box-shadow: 0 5px 5px rgba(0,0,0,.05);
 }
 
-  .header-nav{
+.header-body {
+  display: none;
+}
+
+.header-foot {
+  display: block;
+}
+
+.header-img-logo {
+  opacity: .5;
+}
+
+.header-nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -407,9 +419,129 @@ img {
     justify-content: center;
   }
 
-  .header-ul{
+.header-ul {
     flex-direction: column;
     background-color: transparent;
   }
+
+
+.header-link {
+  font-size: 2rem;
+  padding: .7rem 1rem;
+  display: block;
+  text-align: center;
 }
 
+.header-btn {
+  display: inline-block;
+  padding: 0;
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
+  /* 怕有人不習慣所以幫他們加個手指 */
+  cursor: pointer;
+}
+
+.header-btn-bars {
+  color: rgba(0, 0, 0, .5);
+}
+
+.header-btn-xmark {
+  color: #666;
+  position: absolute;
+  top: .75rem;
+  right: 1.3rem;
+}
+
+
+/* banner-------------- */
+
+.banner {
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+}
+
+.banner-container {
+  flex-direction: column;
+}
+
+.banner-index .banner-head,
+.banner-index .banner-body,
+.banner-body,
+.banner-head {
+  width: 100%;
+}
+
+.banner-index .banner-head,
+.banner-head {
+  padding: 5rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.banner-index .banner-body {
+  padding-top: 1rem;
+}
+
+.banner-body {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.banner-index .banner-ul {
+ justify-content: center;
+ margin-bottom: 1rem;
+}
+
+.banner-title {
+  font-size: 7vw;
+}
+
+.banner-title-line::after{
+  margin-left: -1.5rem;
+  left: 50%;
+}
+
+.banner-small {
+  font-size: 5vw;
+}
+
+.banner-img-mobile {
+  width: 40vw;
+  bottom: 2.5rem;
+}
+
+.banner-img-desktop {
+  width: 70vw;
+  margin-left: 10vw;
+}
+
+.banner-img-pad {
+  width: 60vw;
+}
+
+.banner-service .banner-img-fit,
+.banner-about .banner-img-fit {
+  object-position: center;
+}
+
+/* aside---- */
+
+.aside{
+  display: none;
+}
+
+.footer {
+  clip-path: none;
+  padding-top: 1rem;
+}
+
+.footer-head{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-body {
+  display: none;
+}
+}

@@ -64,6 +64,10 @@
     box-sizing: border-box;
 }
 
+.process-li:nth-child(n+3) {
+    padding-top: 0;
+}
+
 .process-title {
     color: #cf7688;
     font-size: 1.25rem;
@@ -80,4 +84,30 @@
 .process-li::marker {
     color: #cf7688;
     font-size: 1.25rem;
+}
+
+@media screen and (max-width:480px) {
+    
+/* process ------------------------------*/
+
+.process-item, .prcoess-ol{
+    flex-direction: column;
+}
+
+.process-head, .process-body, .process-li{
+    width: auto;
+}
+
+.process-head {
+    padding: 1rem;
+}
+
+.process-li {
+    padding: 0;
+    margin: 1rem;
+}
+
+.process-name {
+    text-align: center;
+}
 }
